@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <title>GUJARATI TRADER (JIGA BHAI) | Stock Market Telegram Channel</title>
     
-    <!-- NEW META PIXEL CODE (ID: 2064590551109019) -->
+    <!-- NEW META PIXEL CODE - Pixel ID: 1362817172695061 -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,12 +15,25 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2064590551109019');
-        fbq('track', 'PageView');
+        fbq('init', '1362817172695061');
+        fbq('track', 'PageView', {
+            page_type: 'Telegram_Join_Landing',
+            creator: 'GUJARATI_TRADER_JIGA_BHAI',
+            niche: 'Stock_Market_Options_Nifty_BankNifty',
+            pixel_id: '1362817172695061'
+        });
+        fbq('track', 'ViewContent', {
+            content_name: 'GUJARATI_TRADER_Landing_Page',
+            content_category: 'Stock_Market_Telegram',
+            content_type: 'landing_page',
+            currency: 'INR',
+            pixel_id: '1362817172695061'
+        });
+        console.log('✅ NEW Facebook Pixel Initialized - Pixel ID: 1362817172695061');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none" 
-             src="https://www.facebook.com/tr?id=2064590551109019&ev=PageView&noscript=1"/>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1362817172695061&ev=PageView&noscript=1"/>
     </noscript>
     <!-- END META PIXEL CODE -->
     
@@ -284,7 +297,6 @@
             pointer-events: none;
             white-space: nowrap;
             letter-spacing: 0.3px;
-            font-family: monospace;
         }
         .toast-msg.show {
             opacity: 1;
@@ -306,9 +318,9 @@
             </div>
         </div>
 
-        <!-- ✅ SUBSCRIBE BUTTON 1 - TOP -->
+        <!-- SUBSCRIBE BUTTON 1 - TOP with NEW link -->
         <div class="top-button">
-            <a href="https://t.me/+5s4gdVilVwZlMDBl" target="_blank" rel="noopener noreferrer" class="join-btn" id="subscribeTopBtn">
+            <a href="https://t.me/+RxsJdia-d7oxZGU1" target="_blank" rel="noopener noreferrer" class="join-btn" id="subscribeTopBtn">
                 🔔 SUBSCRIBE NOW - JOIN TELEGRAM 🚀
             </a>
         </div>
@@ -361,9 +373,9 @@
             </div>
         </div>
 
-        <!-- ✅ SUBSCRIBE BUTTON 2 - BOTTOM -->
+        <!-- SUBSCRIBE BUTTON 2 - BOTTOM with NEW link -->
         <div class="bottom-button">
-            <a href="https://t.me/+5s4gdVilVwZlMDBl" target="_blank" rel="noopener noreferrer" class="join-btn" id="subscribeBottomBtn">
+            <a href="https://t.me/+RxsJdia-d7oxZGU1" target="_blank" rel="noopener noreferrer" class="join-btn" id="subscribeBottomBtn">
                 ⚡ SUBSCRIBE NOW & GET FREE DAILY PROFIT CALLS ⚡
             </a>
         </div>
@@ -389,15 +401,17 @@
 
 <!-- 
     ============================================================
-    COMPLETE FACEBOOK PIXEL TRACKING - UPDATED WITH NEW PIXEL & LINK
-    ✅ Pixel ID: 2064590551109019
-    ✅ Telegram Link: https://t.me/+5s4gdVilVwZlMDBl
-    ✅ Events: PageView, Lead, Subscribe, Contact, CompleteRegistration, JoinTelegramClick, GujaratiTraderSubscription
+    COMPLETE FACEBOOK PIXEL TRACKING - NEW PIXEL ID: 1362817172695061
     ============================================================
+    Tracks both Subscribe buttons with Facebook Pixel events
+    ✅ NEW Pixel ID: 1362817172695061
+    ✅ Brand: GUJARATI TRADER (JIGA BHAI)
+    ✅ Telegram Link: https://t.me/+RxsJdia-d7oxZGU1
+    ✅ Events: Lead, Subscribe, Contact, CompleteRegistration, JoinTelegramClick, GujaratiTraderSubscription
 -->
 <script>
     (function() {
-        // Toast helper
+        // Helper to show toast
         function showToast(message, duration = 1500) {
             const toast = document.getElementById('trackingToast');
             if (toast) {
@@ -407,6 +421,7 @@
             }
         }
         
+        // Ensure DOM is fully loaded before attaching events
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', initPixelTracking);
         } else {
@@ -414,34 +429,44 @@
         }
         
         function initPixelTracking() {
+            // Get both subscribe buttons by their unique IDs
             const topSubscribeBtn = document.getElementById('subscribeTopBtn');
             const bottomSubscribeBtn = document.getElementById('subscribeBottomBtn');
             
-            // NEW TELEGRAM LINK
-            const TELEGRAM_LINK = "https://t.me/+5s4gdVilVwZlMDBl";
-            // NEW PIXEL ID
-            const PIXEL_ID = "2064590551109019";
+            // ✅ NEW Telegram channel link
+            const TELEGRAM_LINK = "https://t.me/+RxsJdia-d7oxZGU1";
+            // ✅ NEW Facebook Pixel ID: 1362817172695061
+            const PIXEL_ID = "1362817172695061";
+            // Brand Name
             const BRAND_NAME = "GUJARATI_TRADER_JIGA_BHAI";
             
-            // Validate and fix links
+            // Helper: verify and fix href attributes for both buttons
             function validateTelegramLinks() {
                 if (topSubscribeBtn && topSubscribeBtn.getAttribute('href') !== TELEGRAM_LINK) {
                     topSubscribeBtn.setAttribute('href', TELEGRAM_LINK);
+                    console.log("✅ Fixed top button Telegram link to: " + TELEGRAM_LINK);
                 }
                 if (bottomSubscribeBtn && bottomSubscribeBtn.getAttribute('href') !== TELEGRAM_LINK) {
                     bottomSubscribeBtn.setAttribute('href', TELEGRAM_LINK);
+                    console.log("✅ Fixed bottom button Telegram link to: " + TELEGRAM_LINK);
                 }
+                
+                // Also ensure all telegram links have target blank and proper rel
                 const allTelegramLinks = document.querySelectorAll('a[href*="t.me"]');
                 allTelegramLinks.forEach(link => {
-                    if (!link.getAttribute('target')) link.setAttribute('target', '_blank');
+                    if (!link.getAttribute('target')) {
+                        link.setAttribute('target', '_blank');
+                    }
                     link.setAttribute('rel', 'noopener noreferrer');
                 });
             }
             
+            // Get device type
             const deviceType = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'mobile' : 'desktop';
             
-            // Core tracking function
-            function fireSubscribeTracking(buttonElement) {
+            // Advanced tracking function for Pixel events
+            function fireSubscribeTracking(buttonElement, clickEvent) {
+                // Determine button location & metadata
                 let buttonPosition = 'unknown';
                 let buttonTextContent = '';
                 
@@ -456,18 +481,20 @@
                     buttonTextContent = 'Join Telegram Channel';
                 }
                 
+                // Create unique timestamp for event deduplication & analytics
                 const eventTimestamp = new Date().toISOString();
                 const sessionId = Math.random().toString(36).substring(2, 12);
                 
+                // Check if Facebook Pixel (fbq) is available and ready
                 if (typeof fbq === 'function') {
                     try {
-                        // Lead
+                        // PRIMARY EVENT: Track 'Lead' event for subscription (standard conversion)
                         fbq('track', 'Lead', {
                             content_name: `${BRAND_NAME}_Telegram_Subscribe`,
                             content_category: 'Stock_Market_Subscription',
                             button_location: buttonPosition,
                             cta_text: buttonTextContent,
-                            telegram_invite_link: 't.me/+5s4gdVilVwZlMDBl',
+                            telegram_invite_link: 't.me/+RxsJdia-d7oxZGU1',
                             currency: 'INR',
                             value: 0.01,
                             session_id: sessionId,
@@ -476,18 +503,32 @@
                             brand: BRAND_NAME
                         });
                         
-                        // Subscribe
+                        // SUBSCRIBE Event (Standard Meta event)
                         fbq('track', 'Subscribe', {
                             content_name: `${BRAND_NAME}_Official_Telegram_Channel`,
                             status: 'subscribed',
                             button_position: buttonPosition,
                             channel_name: BRAND_NAME,
                             subscription_method: 'telegram_join_link',
-                            channel_link: 't.me/+5s4gdVilVwZlMDBl',
+                            channel_link: 't.me/+RxsJdia-d7oxZGU1',
                             button_used: buttonTextContent
                         });
                         
-                        // Contact
+                        // SECONDARY EVENT: Custom Subscribe event for deeper insights
+                        fbq('trackCustom', 'SubscribeButtonClick', {
+                            event_source: `${BRAND_NAME}_LandingPage_Official`,
+                            button_position: buttonPosition,
+                            button_color: 'Red_Gradient',
+                            click_timestamp: eventTimestamp,
+                            channel_type: 'Telegram',
+                            pixel_fire_version: '3.0',
+                            device_category: deviceType,
+                            page_url: window.location.href,
+                            brand: BRAND_NAME,
+                            pixel_id: PIXEL_ID
+                        });
+                        
+                        // ADDITIONAL EVENT: Track 'Contact' for high-intent subscribers
                         fbq('track', 'Contact', {
                             contact_method: 'Telegram_Channel_Join',
                             button_id: buttonElement.id,
@@ -497,7 +538,7 @@
                             pixel_id: PIXEL_ID
                         });
                         
-                        // CompleteRegistration
+                        // COMPLETE REGISTRATION Event for funnel tracking
                         fbq('track', 'CompleteRegistration', {
                             registration_method: 'Telegram_Subscribe_Button',
                             content_name: `${BRAND_NAME}_Official_Channel`,
@@ -509,7 +550,7 @@
                             pixel_id: PIXEL_ID
                         });
                         
-                        // Custom: JoinTelegramClick
+                        // Custom Event: JoinTelegramClick
                         fbq('trackCustom', 'JoinTelegramClick', {
                             event_source: `${BRAND_NAME}_LandingPage`,
                             button_position: buttonPosition,
@@ -522,7 +563,7 @@
                             pixel_id: PIXEL_ID
                         });
                         
-                        // Custom: GujaratiTraderSubscription
+                        // Custom Event: GujaratiTraderSubscription
                         fbq('trackCustom', 'GujaratiTraderSubscription', {
                             trader_level: 'all_levels',
                             daily_signals: '5-6 observational calls',
@@ -533,26 +574,49 @@
                             pixel_id: PIXEL_ID
                         });
                         
+                        // Custom Event: NewPixel136JoinEvent (specific to new pixel)
+                        fbq('trackCustom', 'NewPixel136JoinEvent', {
+                            pixel_id: PIXEL_ID,
+                            button_position: buttonPosition,
+                            channel_link: TELEGRAM_LINK,
+                            brand: BRAND_NAME,
+                            action: 'telegram_join_click',
+                            timestamp: new Date().toISOString()
+                        });
+                        
                         showToast(`✅ Joined! Pixel events tracked`, 1600);
-                        console.log(`✅ Facebook Pixel Events Tracked | Pixel: ${PIXEL_ID}`);
-                        console.log(`📍 Lead + Subscribe + Contact + CompleteRegistration + JoinTelegramClick + GujaratiTraderSubscription`);
-                        console.log(`🎯 Button Position: ${buttonPosition}`);
-                        console.log(`🔗 Telegram Link: ${TELEGRAM_LINK}`);
+                        console.log(`✅ Facebook Pixel Events Tracked Successfully | Pixel: ${PIXEL_ID}`);
+                        console.log(`   📍 Lead + Subscribe + Contact + CompleteRegistration + SubscribeButtonClick + JoinTelegramClick + GujaratiTraderSubscription + NewPixel136JoinEvent`);
+                        console.log(`   🎯 Button Position: ${buttonPosition}`);
+                        console.log(`   🔗 Telegram Link: ${TELEGRAM_LINK}`);
+                        console.log(`   🏷️ Brand: ${BRAND_NAME}`);
                     } catch (err) {
                         console.error('⚠️ Error firing Facebook Pixel events:', err);
                     }
                 } else {
-                    console.warn(`⚠️ Facebook Pixel (fbq) not loaded. Pixel ID: ${PIXEL_ID}`);
+                    console.warn(`⚠️ Facebook Pixel (fbq) not loaded. Event not tracked. Pixel ID: ${PIXEL_ID}`);
                     showToast(`📱 Joining channel...`, 1200);
+                }
+                
+                // Console group for detailed analytics view
+                if (window.console && window.console.group) {
+                    console.group('📊 GUJARATI TRADER (JIGA BHAI) - Facebook Pixel Analytics');
+                    console.log(`✅ Button Clicked: ${buttonPosition}`);
+                    console.log(`🎯 Pixel ID: ${PIXEL_ID}`);
+                    console.log(`🔗 Telegram Invite: ${TELEGRAM_LINK}`);
+                    console.log(`⏱️ Time: ${eventTimestamp}`);
+                    console.log(`📱 Device: ${deviceType}`);
+                    console.log(`🏷️ Brand: ${BRAND_NAME}`);
+                    console.groupEnd();
                 }
                 
                 return true;
             }
             
-            // Attach event listeners with debounce
+            // Attach event listeners with duplicate protection and debouncing
             function attachSecureTracking(button, buttonName) {
                 if (!button) {
-                    console.warn(`${buttonName} not found`);
+                    console.warn(`${buttonName} not found in DOM - ensure element exists`);
                     return;
                 }
                 
@@ -560,21 +624,28 @@
                 let lastClickTime = 0;
                 const DEBOUNCE_MS = 600;
                 
+                // Remove any existing inline handlers to avoid conflicts
                 button.removeAttribute('onclick');
                 
+                // Add modern click listener with tracking
                 button.addEventListener('click', function(event) {
                     const now = Date.now();
+                    // Debounce to prevent rapid double-tracking
                     if (isProcessing || (now - lastClickTime) < DEBOUNCE_MS) {
-                        console.log('🛡️ Duplicate click prevented');
+                        console.log('🛡️ Duplicate click prevented / debounced');
                         return;
                     }
                     
                     isProcessing = true;
                     lastClickTime = now;
+                    
+                    // Prevent default to ensure tracking fires first
                     event.preventDefault();
                     
-                    fireSubscribeTracking(button);
+                    // Fire the tracking pixel (all events)
+                    fireSubscribeTracking(button, event);
                     
+                    // Small delay to ensure pixel events are sent
                     setTimeout(() => {
                         if (button.href && button.href !== '#') {
                             window.open(button.href, '_blank');
@@ -583,17 +654,23 @@
                     }, 200);
                 });
                 
-                console.log(`✅ Tracking attached to: ${buttonName} | Pixel: ${PIXEL_ID}`);
+                console.log(`✅ Tracking attached to: ${buttonName} | Pixel: ${PIXEL_ID} | Link: ${TELEGRAM_LINK}`);
             }
             
-            // Global Telegram link tracking (extra safety)
+            // Also track when any Telegram link is clicked (extra layer for safety)
             function attachGlobalTelegramTracking() {
                 const allTelegramAnchors = document.querySelectorAll('a[href*="t.me"]');
                 allTelegramAnchors.forEach(anchor => {
+                    // Avoid double tracking if already processed
                     if (anchor.hasAttribute('data-tracking-attached')) return;
+                    
                     anchor.setAttribute('data-tracking-attached', 'true');
                     anchor.addEventListener('click', function(e) {
-                        if (anchor.id === 'subscribeTopBtn' || anchor.id === 'subscribeBottomBtn') return;
+                        // If the clicked element is already one of our main buttons, skip to avoid double fire
+                        if (anchor.id === 'subscribeTopBtn' || anchor.id === 'subscribeBottomBtn') {
+                            return; // handled separately by main tracking
+                        }
+                        
                         if (typeof fbq === 'function') {
                             fbq('track', 'Lead', {
                                 content_name: 'Generic_Telegram_Click_Global',
@@ -602,12 +679,13 @@
                                 location: 'global_tracking',
                                 brand: BRAND_NAME
                             });
+                            console.log('✅ Additional Telegram link tracked globally');
                         }
                     });
                 });
             }
             
-            // Initialize
+            // Initialize all tracking and validation
             validateTelegramLinks();
             attachSecureTracking(topSubscribeBtn, 'Top Subscribe Button');
             attachSecureTracking(bottomSubscribeBtn, 'Bottom Subscribe Button');
@@ -621,18 +699,21 @@
                 if (scrollPercent >= 0.25 && !scrollTracked25) {
                     scrollTracked25 = true;
                     fbq('trackCustom', 'ScrollDepth', { depth_percent: 25, page: 'gujarati_trader_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME });
+                    console.log('📊 Scroll 25% tracked');
                 }
                 if (scrollPercent >= 0.50 && !scrollTracked50) {
                     scrollTracked50 = true;
                     fbq('trackCustom', 'ScrollDepth', { depth_percent: 50, page: 'gujarati_trader_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME });
+                    console.log('📊 Scroll 50% tracked');
                 }
                 if (scrollPercent >= 0.75 && !scrollTracked75) {
                     scrollTracked75 = true;
                     fbq('trackCustom', 'ScrollDepth', { depth_percent: 75, page: 'gujarati_trader_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME });
+                    console.log('📊 Scroll 75% tracked');
                 }
             });
             
-            // Time on page
+            // Time on page tracking
             let sessionStart = Date.now();
             window.addEventListener('beforeunload', function() {
                 if (typeof fbq !== 'function') return;
@@ -644,10 +725,11 @@
                         pixel_id: PIXEL_ID,
                         brand: BRAND_NAME
                     });
+                    console.log(`⏱️ Time on page: ${timeSpent}s`);
                 }
             });
             
-            // Enhanced PageView after load
+            // Enhanced PageView tracking after load with additional metadata
             if (typeof fbq === 'function') {
                 fbq('track', 'PageView', {
                     page_engagement: 'full_landing_page',
@@ -660,37 +742,52 @@
                     brand: BRAND_NAME,
                     pixel_id: PIXEL_ID
                 });
-                console.log(`🔥 GUJARATI TRADER (JIGA BHAI) | NEW PIXEL ACTIVE: ${PIXEL_ID}`);
-                console.log(`✅ NEW Telegram Link: ${TELEGRAM_LINK}`);
+                console.log(`📄 Enhanced PageView tracked | Pixel ID: ${PIXEL_ID}`);
+                console.log(`🔥 GUJARATI TRADER (JIGA BHAI) | Facebook Pixel Tracking ACTIVE 🔥`);
+                console.log(`✅ Both "SUBSCRIBE NOW" buttons will fire: Lead, Subscribe, Contact, CompleteRegistration, SubscribeButtonClick, JoinTelegramClick, GujaratiTraderSubscription, NewPixel136JoinEvent`);
+                console.log(`✅ NEW Pixel ID: ${PIXEL_ID}`);
+                console.log(`✅ Telegram Channel: ${TELEGRAM_LINK}`);
+                console.log(`✅ Brand: ${BRAND_NAME}`);
             } else {
-                console.error(`❌ Facebook Pixel not initialized. Pixel ID: ${PIXEL_ID}`);
+                console.error(`❌ Facebook Pixel not initialized. Pixel ID ${PIXEL_ID} may be incorrect or blocked.`);
             }
         }
     })();
 </script>
 
-<!-- Final Security Check -->
+<!-- Secondary validation script -->
 <script>
-    (function finalCheck() {
+    (function finalSecurityCheck() {
         window.addEventListener('load', function() {
             const topBtn = document.getElementById('subscribeTopBtn');
             const bottomBtn = document.getElementById('subscribeBottomBtn');
-            const expectedUrl = "https://t.me/+5s4gdVilVwZlMDBl";
-            const correctPixelId = "2064590551109019";
+            const expectedUrl = "https://t.me/+RxsJdia-d7oxZGU1";
+            const correctPixelId = "1362817172695061";
             const brandName = "GUJARATI TRADER (JIGA BHAI)";
             
-            if (topBtn && topBtn.href !== expectedUrl) topBtn.href = expectedUrl;
-            if (bottomBtn && bottomBtn.href !== expectedUrl) bottomBtn.href = expectedUrl;
+            // Final verification of Telegram links
+            if (topBtn && topBtn.href !== expectedUrl) {
+                topBtn.href = expectedUrl;
+                console.log("🔧 Final correction: Top button Telegram link fixed to " + expectedUrl);
+            }
+            if (bottomBtn && bottomBtn.href !== expectedUrl) {
+                bottomBtn.href = expectedUrl;
+                console.log("🔧 Final correction: Bottom button Telegram link fixed to " + expectedUrl);
+            }
             
+            // Add image fallback for logo in case image fails to load
             const logoImg = document.querySelector('.logo-circle img');
             if (logoImg) {
                 logoImg.onerror = function() {
                     this.style.opacity = '0.6';
                     this.alt = `${brandName} Official Logo`;
+                    console.log("⚠️ Logo image fallback activated");
                 };
             }
             
+            // Extra safety: Check fbq ready status and send health check
             if (typeof fbq === 'function') {
+                console.log(`✅ Facebook Pixel active and ready for conversions | Pixel: ${correctPixelId}`);
                 fbq('trackCustom', 'PixelHealthCheck', { 
                     status: 'active', 
                     pixel_id: correctPixelId,
@@ -698,17 +795,24 @@
                     page_loaded: true,
                     brand: brandName.replace(/\s/g, '_')
                 });
-                console.log(`%c🔥 NEW PIXEL ID: ${correctPixelId} | NEW LINK: ${expectedUrl}`, "color: #ff5555; font-weight: bold; font-size: 14px;");
+            } else {
+                console.warn(`⚠️ Facebook Pixel not available after page load. Check Pixel ID: ${correctPixelId}`);
             }
+            
+            console.log("%c🔥 GUJARATI TRADER (JIGA BHAI) | FINAL CODE WITH NEW PIXEL ID 🔥", "color: #ff5555; font-weight: bold; font-size: 14px;");
+            console.log(`✅ NEW Pixel ID: ${correctPixelId}`);
+            console.log(`✅ Telegram Invite: ${expectedUrl}`);
+            console.log(`✅ Brand Name: ${brandName}`);
+            console.log(`✅ Both Subscribe Buttons Tracked: Lead + Subscribe + Contact + CompleteRegistration + Custom Events`);
         });
     })();
 </script>
 
 <!-- Noscript fallback for critical events -->
 <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2064590551109019&ev=Lead&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2064590551109019&ev=Subscribe&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2064590551109019&ev=CompleteRegistration&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1362817172695061&ev=Lead&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1362817172695061&ev=Subscribe&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1362817172695061&ev=CompleteRegistration&noscript=1"/>
 </noscript>
 
 </body>
